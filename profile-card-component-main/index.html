@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A simple profile card component using Tailwind CSS"
+    />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Example</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="flex items-center justify-center h-screen overflow-hidden bg-[#008e9f]"
+  >
+    <img
+      src="./images/bg-pattern-top.svg"
+      alt=""
+      class="absolute top-[-160px] left-[-150px] w-[450px] sm:w-[500px] md:w-[550px] lg:w-[600px] xl:w-[750px]"
+    />
+    <img
+      src="./images/bg-pattern-bottom.svg"
+      alt=""
+      class="absolute bottom-[-100px] right-[-150px] w-[450px] sm:w-[500px] md:w-[550px] lg:w-[600px] xl:w-[750px]"
+    />
+    <main
+      class="m-0 p-0 w-64 md:w-80 h-fit bg-white border rounded-xl z-50 border flex flex-col justify-between"
+    >
+      <!-- Illustration -->
+      <div
+        class="w-full h-[135px] md:h-[165px] illustration rounded-t-xl relative"
+      ></div>
+      <div>
+        <!-- Icon -->
+        <div
+          class="w-20 h-20 rounded-full bg-white absolute left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
+        >
+          <img
+            src="./images/image-victor.jpg"
+            alt=""
+            class="rounded-full w-[90%]"
+          />
+        </div>
+        <!-- Text -->
+        <div class="text-center mt-14">
+          <h1 class="font-medium md:text-lg">
+            Victor Crest <span class="opacity-65">26</span>
+          </h1>
+          <p class="opacity-65 text-sm md:text-base">London</p>
+        </div>
+        <!-- Footer -->
+        <div
+          class="border-t py-4 flex flex-row items-center justify-around h-[30%] mt-4"
+        >
+          <div class="text-center">
+            <h2 class="text-sm font-bold md:text-base">80K</h2>
+            <p class="text-xs opacity-65 md:text-sm">Followers</p>
+          </div>
+          <div class="text-center">
+            <h2 class="text-sm font-bold md:text-base">803K</h2>
+            <p class="text-xs opacity-65 md:text-sm">Likes</p>
+          </div>
+          <div class="text-center">
+            <h2 class="text-sm font-bold md:text-base">1.4K</h2>
+            <p class="text-xs opacity-65 md:text-sm">Photos</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
